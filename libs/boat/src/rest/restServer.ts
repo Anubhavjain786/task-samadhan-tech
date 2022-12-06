@@ -33,7 +33,7 @@ export class RestServer {
     // interceptors
     app.useGlobalInterceptors(new TimeoutInterceptor());
     // guards
-    app.useGlobalGuards(new RequestGuard());
+    // app.useGlobalGuards(new RequestGuard());
 
     const { httpAdapter } = app.get(HttpAdapterHost);
     app.useGlobalFilters(new ExceptionFilter(httpAdapter));
