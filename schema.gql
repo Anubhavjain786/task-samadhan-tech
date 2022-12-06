@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""users """
+type Auth {
+  message: String!
+  token: String
+}
+
+"""users """
+type User {
+  id: ID!
+  name: String!
+  password: String
+  email: String!
+  token: String!
+}
+
+type Query {
+  user: User!
+}
+
+type Mutation {
+  register(name: String!, email: String!, password: String!): Auth!
+  login(email: String!, password: String!): Auth!
+  fbLogin(name: String!, email: String!): Auth!
+}
