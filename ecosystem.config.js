@@ -1,12 +1,11 @@
 module.exports = {
   apps: [
     {
-      name: 'control-panel',
+      name: 'samadhan-tech-task-control-panel',
       script: './dist/apps/control-panel/src/main.js',
-      env_development: {
-        APP_PORT: 5001,
+      env_production: {
+        APP_PORT: 5055,
       },
-      watch: true,
     },
   ],
 };
